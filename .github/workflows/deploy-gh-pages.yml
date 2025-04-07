@@ -5,15 +5,15 @@ on:
     branches:
       - main
     paths-ignore:
-      - ".github/**"
-      - ".husky/**"
       - ".editorconfig"
+      - ".github/**"
       - ".gitignore"
+      - ".husky/**"
       - ".prettierignore"
       - ".prettierrc"
-      - "docs/**"
       - "Caddyfile"
       - "Dockerfile"
+      - "docs/**"
       - "eslint.config.mjs"
       - "README.md"
 
@@ -39,7 +39,7 @@ jobs:
           pnpm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.7.2
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
         with:
           branch: gh-pages
           folder: build
