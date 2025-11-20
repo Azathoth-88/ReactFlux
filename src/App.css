@@ -49,7 +49,9 @@
     overflow: hidden;
   }
   .main {
-    padding-top: env(safe-area-inset-top);
+/*  padding-top: env(safe-area-inset-top);  */
+    padding-top: 0px !important;
+}
   }
   .arco-menu-light {
     padding-top: env(safe-area-inset-top);
